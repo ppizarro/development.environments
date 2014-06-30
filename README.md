@@ -61,3 +61,6 @@ ansible-playbook provisioning/playbook.yml -i provisioning/production_hosts -K
   * Install Yeoman node.js package globally
   * Install Angular.js generator
 
+ 1. IDE
+  * Add the SublimeText3 PPA
+  * Install SublimeText3
