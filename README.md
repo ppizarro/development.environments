@@ -24,12 +24,23 @@ sudo apt-get update
 sudo apt-get install ansible
 ```
 
-###Provisioning
+###Provisioning local
 
 Change user in provisioning/playbook.yml and execute:
 
 ```
 ansible-playbook provisioning/playbook.yml -i provisioning/production_hosts -K 
+```
+
+###Virtual Machine - Ubuntu 14.04 - Vagrant
+
+ 1. Install VirtualBox
+ 1. Install Vagrant
+ 1. Run:
+
+```
+vagrant up
+vagrant ssh
 ```
 
 ###Roles
