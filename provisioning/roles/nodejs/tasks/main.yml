@@ -13,3 +13,9 @@
   apt: pkg=nodejs update-cache=yes
   sudo: yes
   tags: nodejs
+
+- name: Install "Mocha" node.js package globally.
+  npm: name=mocha global=yes
+  sudo: yes
+  tags: nodejs
+
