@@ -14,8 +14,13 @@
   sudo: yes
   tags: nodejs
 
-- name: Install "Mocha" node.js package globally.
+- name: Install Mocha node.js package globally.
   npm: name=mocha global=yes
+  sudo: yes
+  tags: nodejs
+
+- name: Install Jasmine node.js package globally.
+  npm: name=jasmine-node global=yes
   sudo: yes
   tags: nodejs
 
