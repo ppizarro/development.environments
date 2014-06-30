@@ -1,0 +1,10 @@
+- hosts: all
+  user: vagrant
+  sudo: yes
+
+  roles:
+    - common
+    - git
+    - vim
+    - nodejs
+    - front-end
