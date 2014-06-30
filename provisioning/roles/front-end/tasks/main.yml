@@ -1,6 +1,20 @@
 ---
-- name: Install "bower" node.js package globally.
+- name: Install Bower node.js package globally.
   npm: name=bower global=yes
   sudo: yes
   tags: front-end
 
+- name: Install Karma node.js package globally.
+  npm: name=karma-cli global=yes
+  sudo: yes
+  tags: front-end
+
+- name: Install Yeoman node.js package globally.
+  npm: name=yo global=yes
+  sudo: yes
+  tags: front-end
+
+- name: Install Angular.js generator
+  sudo: yes
+  npm: name=generator-angular global=yes
+  tags: front-end
