@@ -23,5 +23,5 @@ sudo apt-get install ansible
 Change user in provisioning/playbook.yml and execute:
 
 ```
-ansible-playbook provisioning/playbook.yml -i production_hosts -K 
+ansible-playbook provisioning/playbook.yml -i provisioning/production_hosts -K 
 ```
