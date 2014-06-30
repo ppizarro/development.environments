@@ -1,0 +1,10 @@
+- hosts: all
+  user: pizarro
+  sudo: yes
+  connection: local
+
+  roles:
+    - common
+    - git
+    - vim
+    - nodejs
