@@ -7,5 +7,6 @@
     - common
     - git
     - vim
+    - docker
     - nodejs
     - front-end

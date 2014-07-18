@@ -1,0 +1,22 @@
+---
+- name: Package prerequisites for docker
+  apt: pkg=apt-transport-https state=present
+  sudo: yes
+  tags: docker
+
+- name: Add docker Apt signing key
+  #apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=36A1D7869245C8950F966E92D8576A8BA88D21E9 state=present
+  apt_key: url=http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x36A1D7869245C8950F966E92D8576A8BA88D21E9
+  sudo: yes
+  tags: docker
+
+- name: Add the docker repository
+  apt_repository: repo='deb https://get.docker.io/ubuntu docker main' state=present
+  sudo: yes
+  tags: docker
+
+- name: Install docker
+  apt: pkg=lxc-docker update-cache=yes
+  sudo: yes
+  tags: docker
+

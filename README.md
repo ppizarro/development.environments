@@ -59,6 +59,11 @@ vagrant ssh
   * Install vim and exuberant-ctags
   * Install my.vim
 
+ 1. docker
+  * Add docker signing key to apt
+  * Add the docker repository
+  * Install docker
+
  1. nodejs
   * Add the node.js PPA
   * Install node.js and npm
