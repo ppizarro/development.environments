@@ -9,3 +9,8 @@
   sudo: yes
   tags: ruby
 
+- name: Install ruby-dev
+  apt: pkg=ruby2.1-dev
+  sudo: yes
+  tags: ruby
+
