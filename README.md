@@ -77,6 +77,10 @@ vagrant ssh
   * Add the maven PPA
   * Install maven3
 
+ 1. ruby
+  * Add the ruby PPA
+  * Install ruby and gem
+
  1. front-end
   * Install Bower node.js package globally
   * Install Karma node.js package globally
