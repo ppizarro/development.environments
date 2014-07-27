@@ -18,8 +18,8 @@ $ cd development.environments
 1. Install ansible:
 
 ```
-sudo apt-get install apt-add-repository
-sudo apt-add-repository ppa:rquillo/ansible
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
 ```
@@ -70,6 +70,12 @@ vagrant ssh
   * Install Mocha node.js package globally
   * Install Jasmine node.js package globally
   * Install Grunt node.js package globally
+
+ 1. java
+  * Add the java PPA
+  * Install java oracle-jdk-7
+  * Add the maven PPA
+  * Install maven3
 
  1. front-end
   * Install Bower node.js package globally

@@ -1,0 +1,29 @@
+---
+- name: Remove openjdk-7
+  apt: name=openjdk-7-jre state=absent
+  sudo: yes
+  tags: java
+
+- name: Add the java PPA
+  apt_repository: repo='ppa:webupd8team/java' state=present
+  sudo: yes
+  tags: java
+
+- name: Install Oracle jdk-7
+  apt: pkg=oracle-jdk7-installer update-cache=yes
+  sudo: yes
+  tags: java
+
+- name: Download Maven3
+  get_url: url=http://ppa.launchpad.net/natecarlson/maven3/ubuntu/pool/main/m/maven3/maven3_3.2.1-0~ppa1_all.deb dest=/tmp/maven3_3.2.1-0~ppa1_all.deb
+  tags: java
+
+- name: Install Maven3
+  apt: deb=/tmp/maven3_3.2.1-0~ppa1_all.deb
+  sudo: yes
+  tags: java
+ 
+- name: Creating link to mvn
+  file: src=/usr/share/maven3/bin/mvn dest=/usr/bin/mvn state=link
+  sudo: yes
+  tags: java
