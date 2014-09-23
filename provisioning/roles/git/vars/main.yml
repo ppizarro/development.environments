@@ -1,4 +1,5 @@
 ---
 git_user_name: "Paulo Pizarro"
 git_user_email: paulo.pizarro@gmail.com
+git_core_editor: vim
 git_push_default: simple
