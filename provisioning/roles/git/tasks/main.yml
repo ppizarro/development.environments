@@ -18,3 +18,9 @@
   command: git config --global push.default {{ git_push_default }}
   sudo: no
   tags: git
+
+- name: Set git core.editor to {{ git_core_edit }}
+  command: git config --system core.editor {{ git_core_edit }}
+  sudo: yes
+  tags: git
+
