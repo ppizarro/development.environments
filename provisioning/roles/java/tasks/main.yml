@@ -9,6 +9,11 @@
   sudo: yes
   tags: java
 
+- name: Automatically select the Oracle License
+  shell: echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+  sudo: yes
+  tags: java
+
 - name: Install Oracle jdk-7
   apt: pkg=oracle-jdk7-installer update-cache=yes
   sudo: yes
