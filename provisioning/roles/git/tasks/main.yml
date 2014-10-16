@@ -5,12 +5,12 @@
   tags: git
 
 - name: Set git user.name to {{ git_user_name }}
-  command: git config --global user.name {{ git_user_name }}
+  command: git config --global --replace-all user.name {{ git_user_name }}
   sudo: no
   tags: git
 
 - name: Set git user.email to {{ git_user_email }}
-  command: git config --global user.email {{ git_user_email }}
+  command: git config --global --replace-all user.email {{ git_user_email }}
   sudo: no
   tags: git
 
@@ -19,8 +19,8 @@
   sudo: no
   tags: git
 
-- name: Set git core.editor to {{ git_core_edit }}
-  command: git config --system core.editor {{ git_core_edit }}
+- name: Set git core.editor to {{ git_core_editor }}
+  command: git config --system core.editor {{ git_core_editor }}
   sudo: yes
   tags: git
 
