@@ -4,6 +4,11 @@
   sudo: yes
   tags: front-end
 
+- name: Install Gulp node.js package globally.
+  npm: name=gulp global=yes
+  sudo: yes
+  tags: front-end
+
 - name: Install Karma node.js package globally.
   npm: name=karma-cli global=yes
   sudo: yes

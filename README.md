@@ -73,6 +73,7 @@ vagrant ssh
 
  1. front-end
   * Install Bower node.js package globally
+  * Install Gulp node.js package globally
   * Install Karma node.js package globally
   * Install Yeoman node.js package globally
   * Install Angular.js generator
