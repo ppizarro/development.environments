@@ -9,18 +9,8 @@
   sudo: yes
   tags: front-end
 
-- name: Install Gulp util node.js package globally.
-  npm: name=gulp-util global=yes
-  sudo: yes
-  tags: front-end
-
-- name: Install Gulp uglify node.js package globally.
-  npm: name=gulp-uglify global=yes
-  sudo: yes
-  tags: front-end
-
-- name: Install Gulp watch node.js package globally.
-  npm: name=gulp-watch global=yes
+- name: Install latest available version of sass.
+  gem: name=sass state=latest
   sudo: yes
   tags: front-end
 
@@ -34,7 +24,13 @@
   sudo: yes
   tags: front-end
 
-- name: Install Angular.js generator
+- name: Install Angular generator
   sudo: yes
   npm: name=generator-angular global=yes
   tags: front-end
+
+- name: Install Angular Gulp Bower generator
+  sudo: yes
+  npm: name=generator-angular-gulp-bower global=yes
+  tags: front-end
+
