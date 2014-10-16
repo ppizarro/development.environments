@@ -18,3 +18,7 @@
 - name: Install make
   apt: pkg=make
   tags: common
+
+- name: Install curl
+  apt: pkg=curl
+  tags: common

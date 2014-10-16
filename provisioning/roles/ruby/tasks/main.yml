@@ -1,0 +1,16 @@
+---
+- name: Add the ruby PPA
+  apt_repository: repo='ppa:brightbox/ruby-ng' state=present
+  sudo: yes
+  tags: ruby
+
+- name: Install ruby and gem
+  apt: pkg=ruby2.1 update-cache=yes
+  sudo: yes
+  tags: ruby
+
+- name: Install ruby-dev
+  apt: pkg=ruby2.1-dev
+  sudo: yes
+  tags: ruby
+
