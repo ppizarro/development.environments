@@ -24,8 +24,8 @@
   sudo: yes
   tags: nodejs
 
-- name: Install Grunt node.js package globally.
-  npm: name=grunt-cli global=yes
+- name: Install Node Inspector package globally.
+  npm: name=node-inspector global=yes
   sudo: yes
   tags: nodejs
 
