@@ -9,13 +9,18 @@
   sudo: yes
   tags: front-end
 
-- name: Install latest available version of sass.
-  gem: name=sass state=latest
+- name: Install less node.js package globally.
+  npm: name=less global=yes
   sudo: yes
   tags: front-end
 
 - name: Install Karma node.js package globally.
   npm: name=karma-cli global=yes
+  sudo: yes
+  tags: front-end
+
+- name: Install latest available version of sass.
+  gem: name=sass state=latest
   sudo: yes
   tags: front-end
 
